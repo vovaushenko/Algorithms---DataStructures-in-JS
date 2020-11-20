@@ -82,4 +82,24 @@ class SinglyLinkedList {
     this.length++;
     return this;
   }
+
+  get(id) {
+    if (id < 0 || id >= this.length) {
+      return null;
+    }
+    let counter = 0;
+    let current = this.head;
+    while (counter !== id) {
+      current = curent.next;
+      counter++;
+    }
+    return current;
+  }
 }
+
+const list = new SinglyLinkedList();
+list.push("Hello");
+list.push("Goodbye");
+list.push("!");
+list.push("<3");
+list.push(":)");
